@@ -15,11 +15,11 @@ void number_of_players ()
 {
 if (players == 1)
   {
-  //function name
+  one_player();
   }
 else if (players == 2)
   {
-  //function name
+  two_players();
   }
 else 
   {
@@ -48,3 +48,15 @@ void two_players()
 cout << "There will be two rounds, first one for player one's time, and the second one for player two's time." << endl;
 cout << "The player with the fastest time to finish the given sentence wins!" << endl;
 cout << "Press the space bar when both players are ready." << endl; 
+cin >> player2ready;
+if (player2ready == 32) 
+  {
+  //continue
+  }
+else 
+  {
+  two_players();
+  }
+
+
+void prompt_one ()
